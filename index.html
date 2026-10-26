@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="scroll-behavior:smooth;color-scheme:light">
+
+<head>
+  <!-- 1. الأساسيات -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0284c7">
+  <link rel="preload" as="image" fetchpriority="high"
+    imagesrcset="/assets/image/clinique-dentaire-soins-600.webp 600w, /assets/image/clinique-dentaire-soins-1200webp.webp 1200w, /assets/image/clinique-dentaire-soins-1600.webp 1600w"
+    imagesizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 500px">
+
+  <!-- 2. SEO -->
+  <title>عيادة الابتسامة | تنظيف وتبييض وزراعة الأسنان</title>
+  <meta name="description"
+    content="عيادة الابتسامة لطب الأسنان: تنظيف وتبييض الأسنان، الزرع والتركيب، وخدمات أسنان الأطفال. تعرّف على الخدمات والأسعار واحجز موعدك عبر واتساب.">
+  <meta name="keywords" content="طبيب أسنان الرباط, تبييض الأسنان, زرع الأسنان, أسنان الأطفال, عيادة أسنان">
+  <meta name="author" content="عيادة الابتسامة">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- 3. Open Graph (واتساب، فيسبوك، تيليجرام) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_MA">
+  <meta property="og:site_name" content="عيادة الابتسامة">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:title" content="عيادة الابتسامة | خدمات طب الأسنان">
+  <meta property="og:description"
+    content="تنظيف وتبييض الأسنان، الزرع والتركيب، وخدمات أسنان الأطفال. احجز موعدك بسهولة عبر واتساب.">
+  <meta property="og:image" content="https://example.com/assets/image/og-cover.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="عيادة الابتسامة لطب الأسنان بالرباط">
+
+  <!-- 4. Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="عيادة الابتسامة | خدمات طب الأسنان">
+  <meta name="twitter:description"
+    content="تنظيف وتبييض الأسنان، الزرع والتركيب، وخدمات أسنان الأطفال. احجز موعدك بسهولة عبر واتساب.">
+  <meta name="twitter:image" content="https://example.com/assets/image/og-cover.jpg">
+
+  <!-- 5. الأيقونات -->
+  <link rel="icon" href="/assets/image/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/image/logo.svg">
+
+  <!-- 6. الخطوط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+  </noscript>
+
+  <!-- 7. الستايلات -->
+  <link rel="preload" href="/assets/css/tailwind.css" as="style">
+  <link href="/assets/css/tailwind.css" rel="stylesheet">
+  <style>
+    .js .reveal {
+      opacity: 0;
+      translate: 0 24px;
+      transition: opacity .6s ease, translate .6s ease;
+      transition-delay: var(--d, 0ms);
+    }
+
+    .js .reveal.is-visible {
+      opacity: 1;
+      translate: 0 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .js .reveal {
+        opacity: 1;
+        translate: none;
+        transition: none;
+      }
+    }
+  </style>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- 8. Structured Data -->
+  <script type="application/ld+json" id="schema-clinic">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "عيادة الابتسامة",
+    "url": "https://example.com/",
+    "logo": "https://example.com/assets/image/logo.svg",
+    "image": "https://example.com/assets/image/og-cover.jpg",
+    "medicalSpecialty": "Dentistry",
+    "areaServed": { "@type": "City", "name": "Rabat" },
+    "priceRange": "MAD",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Rue Chaouen",
+      "addressLocality": "Rabat",
+      "postalCode": "10000",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0252325,
+      "longitude": -6.827486
+    },
+    "hasMap": "https://www.google.com/maps/place/12+Rue+Chaouen,+Rabat+10000",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "عيادة الابتسامة",
+    "url": "https://example.com/",
+    "inLanguage": "ar",
+    "publisher": {
+      "@type": "Dentist",
+      "name": "عيادة الابتسامة",
+      "url": "https://example.com/"
+    }
+  }
+  </script>
+</head>
+
+<body class="text-slate-800 antialiased">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-extrabold text-lg text-sky-700">
+        <img src="assets/image/logo.svg" alt="شعار عيادة الابتسامة" width="40" height="40" class="w-10 h-10">
+        عيادة الابتسامة
+      </a>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-600" aria-label="التنقل الرئيسي">
+        <a href="#services" class="hover:text-sky-600">الخدمات</a>
+        <a href="#prices" class="hover:text-sky-600">الأسعار</a>
+        <a href="#location" class="hover:text-sky-600">الموقع</a>
+        <a href="#faq" class="hover:text-sky-600">أسئلة شائعة</a>
+        <a href="#booking" class="hover:text-sky-600">حجز موعد</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#booking"
+          class="inline-block bg-sky-700 hover:bg-sky-800 text-white font-bold text-sm py-2 px-4 rounded-xl shadow-sm transition-colors">
+          احجز الآن
+        </a>
+        <details class="relative md:hidden" id="mobile-menu">
+          <summary aria-label="فتح قائمة التنقل" title="القائمة"
+            class="cursor-pointer list-none rounded-xl border border-slate-200 p-2 text-slate-700 hover:bg-sky-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </summary>
+          <nav
+            class="absolute end-0 top-full mt-2 grid min-w-40 gap-1 rounded-xl border border-slate-100 bg-white p-2 text-sm font-medium text-slate-700 shadow-xl"
+            aria-label="التنقل للهاتف">
+            <a href="#services" class="rounded-lg px-3 py-2 hover:bg-sky-50">الخدمات</a>
+            <a href="#prices" class="rounded-lg px-3 py-2 hover:bg-sky-50">الأسعار</a>
+            <a href="#location" class="rounded-lg px-3 py-2 hover:bg-sky-50">الموقع</a>
+            <a href="#faq" class="rounded-lg px-3 py-2 hover:bg-sky-50">أسئلة شائعة</a>
+            <a href="#booking" class="rounded-lg px-3 py-2 hover:bg-sky-50">حجز موعد</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="hero-title" class="bg-gradient-to-b from-sky-50 to-slate-50 py-16 lg:py-24">
+      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="text-center lg:text-right space-y-5">
+          <span class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-4 py-2 rounded-full">✨ الكشف الأول
+            مجاني</span>
+          <h1 id="hero-title" class="text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900">ابتسامة <span
+              class="text-sky-600">صحية</span> وجميلة تبدأ من هنا</h1>
+          <p class="text-slate-600 text-lg">فريق متخصص، تجهيزات حديثة، وعلاج بدون ألم فـ أجواء مريحة لكل العائلة.</p>
+          <div class="flex justify-center lg:justify-start">
+            <a href="#booking"
+              class="bg-sky-700 hover:bg-sky-800 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-sky-600/30">احجز
+              موعدك</a>
+          </div>
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200 max-w-md mx-auto lg:mx-0">
+            <div>
+              <p class="text-2xl font-extrabold">+2000</p>
+              <p class="text-xs text-slate-500">مريض</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold">12</p>
+              <p class="text-xs text-slate-500">سنة خبرة</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold">4.5★</p>
+              <p class="text-xs text-slate-500">التقييم</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow-2xl border border-slate-100 text-center space-y-3">
+          <!-- هيرو: 3 نسخ (600 / 1200 / 1600) -->
+          <img src="assets/image/clinique-dentaire-soins-400.webp" srcset="
+              assets/image/clinique-dentaire-soins-320.webp 320w,
+              assets/image/clinique-dentaire-soins-400.webp 400w,
+              assets/image/clinique-dentaire-soins-600.webp 600w" 
+              sizes="(max-width: 768px) 314px, 400px" alt="طبيب أسنان يفحص أسنان مريضة خلال كشف روتيني" width="400" height="267"
+            fetchpriority="high" decoding="async" class="block w-full aspect-[16/10] object-cover rounded-xl mb-5" />
+          <p class="font-bold text-xl">مواعيد سريعة بدون انتظار</p>
+          <p class="text-sm text-slate-500">عمر الاستمارة وغادي نتواصلو معاك فالواتساب باش نأكدو الموعد.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-title" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 id="services-title" class="text-3xl font-extrabold text-center mb-12">خدماتنا</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <!-- الخدمة 1: تنظيف وتبييض -->
+          <div
+            class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:border-sky-200 transition">
+            <img src="assets/image/teeth-cleaning-whitening-400.webp"
+              srcset="assets/image/teeth-cleaning-whitening-400.webp 400w" sizes="(max-width: 768px) 320px, 360px"
+              alt="مريضة خلال جلسة تنظيف وتبييض الأسنان" width="400" height="300" loading="lazy" decoding="async"
+              class="block w-full aspect-[4/3] object-cover rounded-xl mb-5">
+            <h3 class="font-bold text-xl mb-2">تنظيف وتبييض</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">تنظيف عميق وتبييض آمن باش ترجع لأسنانك لمعتها الطبيعية.
+            </p>
+          </div>
+
+          <!-- الخدمة 2: زرع وتركيب -->
+          <div
+            class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:border-sky-200 transition">
+            <img src="assets/image/dental-clinic-patient-exam-400.webp"
+              srcset="assets/image/dental-clinic-patient-exam-400.webp 400w" sizes="(max-width: 768px) 320px, 360px"
+              alt="فحص أسنان داخل العيادة" width="400" height="300" loading="lazy" decoding="async"
+              class="block w-full aspect-[4/3] object-cover rounded-xl mb-5">
+            <h3 class="font-bold text-xl mb-2">زرع وتركيب</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">زرع الأسنان والتركيبات الثابتة بأحدث التقنيات وبنتائج
+              طبيعية.</p>
+          </div>
+
+          <!-- الخدمة 3: أسنان الأطفال -->
+          <div
+            class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:border-sky-200 transition">
+            <img src="assets/image/Dentist-gids-400.webp" srcset="assets/image/Dentist-gids-400.webp 400w"
+              sizes="(max-width: 768px) 320px, 360px" alt="طبيبة أسنان تفحص طفلة" width="400" height="300"
+              loading="lazy" decoding="async" class="block w-full aspect-[4/3] object-cover rounded-xl mb-5">
+            <h3 class="font-bold text-xl mb-2">أسنان الأطفال</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">فضاء مخصص للصغار وطريقة لطيفة كتخليهم يحبو الطبيب.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title" class="py-20 bg-slate-50">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 id="about-title" class="text-3xl font-extrabold text-center mb-6">عن عيادة الابتسامة</h2>
+        <div class="space-y-4 text-slate-600 leading-relaxed">
+          <p>عيادة الابتسامة هي عيادة لطب الأسنان فالرباط، كنستقبلو المرضى الكبار والصغار فـ أجواء مريحة، وكنعتمدو على
+            تجهيزات حديثة وتعقيم صارم لكل الأدوات.</p>
+          <p>كنبداو دائما بكشف وتشخيص دقيق، وكنشرحو ليك الحالة والعلاج المقترح والتكلفة قبل ما نبداو، باش تكون عندك صورة
+            واضحة وتقرر وانت مرتاح.</p>
+          <p>كنقدمو تنظيف وتبييض الأسنان، زرع وتركيب الأسنان، تقويم الأسنان، وعلاج أسنان الأطفال بطريقة لطيفة. تقدر تحجز
+            موعدك فدقيقة عبر الواتساب، وغادي نتواصلو معاك باش نأكدو الوقت المناسب ليك.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" aria-labelledby="prices-title" class="py-20 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 id="prices-title" class="text-3xl font-extrabold text-center mb-12">أسعار واضحة</h2>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div class="bg-white rounded-2xl p-8 border border-slate-100">
+            <h3 class="font-bold mb-2">كشف وتشخيص</h3>
+            <p class="text-3xl font-extrabold text-sky-600">مجاني</p>
+          </div>
+          <div class="bg-sky-600 text-white rounded-2xl p-8 shadow-xl md:scale-105">
+            <h3 class="font-bold mb-2">تنظيف + تبييض</h3>
+            <p class="text-3xl font-extrabold">800 درهم</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-slate-100">
+            <h3 class="font-bold mb-2">تقويم الأسنان</h3>
+            <p class="text-3xl font-extrabold text-sky-600">من 5000 درهم</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" aria-labelledby="location-title" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 id="location-title" class="text-3xl font-extrabold text-center mb-3">كيف توصل لينا</h2>
+        <p class="text-center text-slate-600 mb-10">12 Rue Chaouen, Rabat 10000</p>
+        <div class="rounded-2xl border border-slate-100 overflow-hidden shadow-sm">
+          <button type="button"
+            data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.726429575787!2d-6.827486000000016!3d34.02523250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b8c290d156b%3A0x3ace89e1ae211831!2s12%20Rue%20Chaouen%2C%20Rabat%2010000!5e0!3m2!1sen!2sma!4v1792844879096!5m2!1sen!2sma"
+            class="flex h-72 w-full flex-col items-center justify-center gap-3 bg-sky-50 text-sky-800 hover:bg-sky-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-sky-600"
+            aria-label="حمّل خريطة عيادة الابتسامة على Google Maps">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" />
+            </svg>
+            <span class="font-bold">عرض الخريطة</span>
+            <span class="text-sm">12 Rue Chaouen, Rabat 10000</span>
+          </button>
+          <div class="p-5 flex flex-col sm:flex-row items-center justify-between gap-3 bg-slate-50">
+            <p class="text-sm text-slate-600">قريبين منك؟ دوز تشوفنا.</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=12+Rue+Chaouen,+Rabat+10000" target="_blank"
+              rel="noopener noreferrer"
+              class="bg-sky-600 hover:bg-sky-700 text-white font-bold text-sm py-2.5 px-5 rounded-xl">الاتجاهات فـ
+              Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title" class="py-20 bg-slate-50">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 id="faq-title" class="text-3xl font-extrabold text-center mb-3">أسئلة شائعة</h2>
+        <p class="text-center text-slate-600 mb-10">معلومات تساعدك قبل حجز موعدك.</p>
+        <div class="space-y-4">
+          <details class="rounded-2xl border border-slate-200 bg-white p-5">
+            <summary class="cursor-pointer font-bold">كيفاش نحجز موعد؟</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">عمّر معلوماتك فالاستمارة واختار الخدمة، وغادي يتحل
+              واتساب برسالة جاهزة باش تتواصل مع العيادة.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-white p-5">
+            <summary class="cursor-pointer font-bold">واش الأثمنة نهائية؟</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">الأثمنة المعروضة استرشادية، والتكلفة النهائية كتتحدد
+              حسب التشخيص والحالة بعد الكشف.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-white p-5">
+            <summary class="cursor-pointer font-bold">شنو ندير إلا بغيت نعرف واش الخدمة مناسبة ليا؟</summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">اختار الكشف فالاستمارة وتواصل مع العيادة باش يوجهوك
+              للخطوة المناسبة.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-title" class="py-20 bg-white">
+      <div class="max-w-xl mx-auto px-4">
+        <div class="bg-gradient-to-br from-sky-600 to-cyan-700 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+          <h2 id="booking-title" class="text-2xl sm:text-3xl font-extrabold text-center mb-2">احجز موعدك</h2>
+          <p class="text-center text-white/90 text-sm mb-6">غادي تتحل رسالة واتساب بالمعلومات اللي دخلتي باش ترسلها
+            للعيادة.</p>
+          <form id="f" class="space-y-4 bg-white text-slate-800 rounded-2xl p-6">
+            <div>
+              <label for="name" class="block text-sm font-bold mb-1">الاسم الكامل</label>
+              <input id="name" name="name" autocomplete="name" minlength="3" required
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 outline-none focus:ring-2 focus:ring-sky-500"
+                placeholder="مثال: محمد العالمي">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-bold mb-1">رقم الهاتف</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                pattern="(\+212|0)[5-7][0-9]{8}" title="مثال: 0600000000" dir="ltr" required
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 outline-none focus:ring-2 focus:ring-sky-500 text-right"
+                placeholder="0600000000">
+            </div>
+            <div>
+              <label for="service" class="block text-sm font-bold mb-1">الخدمة</label>
+              <select id="service" name="service" required
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 outline-none focus:ring-2 focus:ring-sky-500">
+                <option value="" disabled selected>اختار الخدمة...</option>
+                <option>كشف مجاني</option>
+                <option>تنظيف وتبييض</option>
+                <option>زرع وتركيب</option>
+                <option>أسنان الأطفال</option>
+              </select>
+            </div>
+            <button type="submit"
+              class="w-full bg-sky-600 hover:bg-sky-700 text-white font-extrabold py-3.5 rounded-xl shadow-lg">تأكيد
+              الحجز عبر WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-4">
+        <a href="/" class="flex items-center gap-2 font-extrabold text-lg text-white">
+          <img src="assets/image/logo.svg" alt="" width="36" height="36" class="w-9 h-9">
+          عيادة الابتسامة
+        </a>
+        <p class="text-sm leading-relaxed text-slate-400">عيادة لطب الأسنان للكبار والصغار: تنظيف، تبييض، زرع
+          وتركيب، فـ أجواء مريحة وبأسعار واضحة.</p>
+      </div>
+
+      <nav aria-label="روابط سريعة">
+        <h2 class="text-white font-bold mb-4">روابط سريعة</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-white">الخدمات</a></li>
+          <li><a href="#prices" class="hover:text-white">الأسعار</a></li>
+          <li><a href="#location" class="hover:text-white">الموقع</a></li>
+          <li><a href="#booking" class="hover:text-white">حجز موعد</a></li>
+          <li><a href="#faq" class="hover:text-white">أسئلة شائعة</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="text-white font-bold mb-4">تواصل معنا</h2>
+        <address class="not-italic space-y-2 text-sm">
+          <p><a data-contact="wa" target="_blank" rel="noopener noreferrer" class="hover:text-white">راسلنا عبر
+              واتساب</a></p>
+          <p>
+            <a data-contact="tel" class="hover:text-white">أو اتصل بنا
+            </a>
+          </p>
+        </address>
+      </div>
+
+      <div>
+        <p class="text-white font-bold mb-4">موقع العيادة</p>
+        <address class="not-italic">
+          <p dir="ltr" class="text-sm mb-3 text-center">12 Rue Chaouen, Rabat 10000</p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=12+Rue+Chaouen,+Rabat+10000" target="_blank"
+            rel="noopener noreferrer" class="text-sm hover:text-white">
+            الاتجاهات فـ Google Maps
+          </a>
+        </address>
+      </div>
+    </div> <!-- سد الـ grid هنا -->
+
+    <div class="border-t border-slate-800">
+      <p class="max-w-6xl mx-auto px-4 py-5 text-center text-xs text-slate-400">عيادة الابتسامة — جميع الحقوق محفوظة
+        © 2026</p>
+    </div>
+  </footer>
+
+  <!-- أزرار عائمة: واتساب + اتصال -->
+  <div class="fixed left-4 z-50 flex flex-col gap-3" style="bottom:calc(1rem + env(safe-area-inset-bottom, 0px))">
+    <a data-contact="wa" data-text="أريد حجز موعد" target="_blank" rel="noopener noreferrer"
+      aria-label="تواصل معنا عبر واتساب"
+      class="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg flex items-center justify-center focus:outline-none focus-visible:ring-4 focus-visible:ring-green-300">
+      <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.1c-.25.7-1.4 1.3-1.95 1.35-.5.05-1.1.07-1.8-.12-.4-.13-.95-.3-1.6-.6-2.8-1.2-4.6-4-4.75-4.2-.14-.2-1.1-1.5-1.1-2.8s.7-2 .95-2.25c.25-.27.55-.33.73-.33h.52c.17 0 .4-.06.62.48.25.55.8 1.9.87 2.05.07.14.1.3.02.48-.1.18-.14.3-.28.46l-.42.5c-.14.14-.28.3-.12.57.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.33.27.14.43.12.6-.07.16-.2.7-.8.88-1.08.18-.27.37-.22.6-.13.25.1 1.6.75 1.87.9.27.13.45.2.52.3.07.1.07.65-.18 1.35Z" />
+      </svg>
+    </a>
+    <a data-contact="tel" aria-label="اتصل بنا"
+      class="w-14 h-14 rounded-full bg-sky-600 hover:bg-sky-700 text-white shadow-lg flex items-center justify-center focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-300">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <path
+          d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>

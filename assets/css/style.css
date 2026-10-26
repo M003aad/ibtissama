@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@source "../../index.html";
+
+@layer base {
+    body {
+        font-family: 'Tajawal', Tahoma, sans-serif;
+        background: #f8fafc;
+    }
+
+    /* Scroll reveal */
+    .js .reveal {
+        opacity: 0;
+        translate: 0 24px;
+        transition: opacity .6s ease, translate .6s ease;
+        transition-delay: var(--d, 0ms);
+    }
+
+    .js .reveal.is-visible {
+        opacity: 1;
+        translate: 0 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .js .reveal {
+            opacity: 1;
+            translate: none;
+            transition: none;
+        }
+    }
+}
